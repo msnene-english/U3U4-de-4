@@ -3,7 +3,7 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>U3U4 đề 4</title>
+    <title>U3-U4 Đề 4</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f0f2f5; position: relative; z-index: 1; }
         .watermark { position: absolute; top: 30px; left: 0; right: 0; text-align: center; font-size: 50px; color: rgba(0, 0, 0, 0.04); font-weight: bold; pointer-events: none; z-index: -1; user-select: none; }
@@ -57,14 +57,14 @@
     </head>
     <body>
     <div class="watermark">
-        <div>U3U4 đề 4<br>GV biên soạn: Ms Chí Nên - 0852639652</div>
-        <div>U3U4 đề 4<br>GV biên soạn: Ms Chí Nên - 0852639652</div>
-        <div>U3U4 đề 4<br>GV biên soạn: Ms Chí Nên - 0852639652</div>
-        <div>U3U4 đề 4<br>GV biên soạn: Ms Chí Nên - 0852639652</div>
+        <div>U3-U4 Đề 4<br>GV biên soạn: Ms Chí Nên - 0852639652</div>
+        <div>U3-U4 Đề 4<br>GV biên soạn: Ms Chí Nên - 0852639652</div>
+        <div>U3-U4 Đề 4<br>GV biên soạn: Ms Chí Nên - 0852639652</div>
+        <div>U3-U4 Đề 4<br>GV biên soạn: Ms Chí Nên - 0852639652</div>
     </div>
     
     <div id="startScreen" class="screen active">
-        <h1>U3U4 đề 4</h1>
+        <h1>U3-U4 Đề 4</h1>
         <p style="text-align: center; color: #7f8c8d;">Nhập họ và tên của bạn để bắt đầu làm bài</p>
         <input type="text" id="studentName" placeholder="Ví dụ: Nguyễn Văn A" autocomplete="off">
         <div style="text-align: center;">
@@ -73,7 +73,7 @@
     </div>
     
     <div id="testScreen" class="screen">
-        <h2>U3U4 đề 4</h2>
+        <h2>U3-U4 Đề 4</h2>
         <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
         <div id="questionsContainer"></div>
         <div style="text-align: center; margin-top: 30px;">
@@ -93,700 +93,699 @@
     </div>
     
     <script>
-        const testName = 'rU3U4 đề 4';
+        const testName = 'rU3-U4 Đề 4';
         const quizData = [
-    {
-        "id": 1,
-        "type": "gap_fill_text",
-        "questionHTML": "<b>Questions 1–36. Gap Fill – Phrasal Verbs</b><br>1. I finally {{blank:b1}} organising my stamp collection after months of delay.",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "got round to"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Tôi cuối cùng đã bắt tay vào sắp xếp bộ sưu tập tem của mình sau nhiều tháng trì hoãn.<br><strong>Cấu trúc:</strong> Cấu trúc 'get round to V-ing/N': bắt đầu làm gì sau một thời gian dài dự định."
-    },
-    {
-        "id": 2,
-        "type": "gap_fill_text",
-        "questionHTML": "2. What did you {{blank:b1}} at the weekend?",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "get up to"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Bạn đã làm gì vào cuối tuần?<br><strong>Cấu trúc:</strong> Cụm 'get up to': làm gì đó (thường là chuyện gì đó không bình thường hoặc tinh nghịch)."
-    },
-    {
-        "id": 3,
-        "type": "gap_fill_text",
-        "questionHTML": "3. Do you {{blank:b1}} adventure sports?",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "go in for"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Bạn có đam mê thể thao mạo hiểm không?<br><strong>Cấu trúc:</strong> Cụm 'go in for': tham gia, đam mê, thích một hoạt động nào đó."
-    },
-    {
-        "id": 4,
-        "type": "gap_fill_text",
-        "questionHTML": "4. I've {{blank:b1}} skiing since I discovered snowboarding.",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "gone off"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Tôi đã không còn thích trượt tuyết kể từ khi tôi khám phá ra trượt ván tuyết.<br><strong>Cấu trúc:</strong> Cụm 'go off': không còn thích cái gì đó nữa."
-    },
-    {
-        "id": 5,
-        "type": "gap_fill_text",
-        "questionHTML": "5. Everyone was dancing, so I decided to {{blank:b1}}.",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "join in"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Mọi người đang nhảy múa, nên tôi quyết định tham gia.<br><strong>Cấu trúc:</strong> Cụm 'join in': tham gia vào một hoạt động đang diễn ra."
-    },
-    {
-        "id": 6,
-        "type": "gap_fill_text",
-        "questionHTML": "6. Our team was {{blank:b1}} in the semi-final.",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "knocked out"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Đội của chúng tôi đã bị loại ở bán kết.<br><strong>Cấu trúc:</strong> Cụm 'knock out': đánh bại, loại khỏi cuộc thi."
-    },
-    {
-        "id": 7,
-        "type": "gap_fill_text",
-        "questionHTML": "7. {{blank:b1}}! There's a cyclist coming.",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "Look out",
-                    "Watch out"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Cẩn thận! Có một người đi xe đạp đang tới.<br><strong>Cấu trúc:</strong> Cụm 'Look out/Watch out': cẩn thận, chú ý (dùng để cảnh báo nguy hiểm)."
-    },
-    {
-        "id": 8,
-        "type": "gap_fill_text",
-        "questionHTML": "8. She had to {{blank:b1}} of the race because of an ankle injury.",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "pull out"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Cô ấy đã phải rút lui khỏi cuộc đua vì chấn thương mắt cá chân.<br><strong>Cấu trúc:</strong> Cụm 'pull out': rút lui, không tham gia nữa."
-    },
-    {
-        "id": 9,
-        "type": "gap_fill_text",
-        "questionHTML": "9. They had to {{blank:b1}} the match until Saturday.",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "put off"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Họ đã phải hoãn trận đấu cho đến thứ Bảy.<br><strong>Cấu trúc:</strong> Cụm 'put off': hoãn lại."
-    },
-    {
-        "id": 10,
-        "type": "gap_fill_text",
-        "questionHTML": "10. I can't {{blank:b1}} people who cheat.",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "put up with"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Tôi không thể chịu đựng những người gian lận.<br><strong>Cấu trúc:</strong> Cụm 'put up with': chịu đựng ai/cái gì."
-    },
-    {
-        "id": 11,
-        "type": "gap_fill_text",
-        "questionHTML": "11. He quickly {{blank:b1}} swimming and now goes every day.",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "took to"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Anh ấy nhanh chóng thích bơi lội và bây giờ đi bơi mỗi ngày.<br><strong>Cấu trúc:</strong> Cụm 'take to': bắt đầu thích cái gì."
-    },
-    {
-        "id": 12,
-        "type": "gap_fill_text",
-        "questionHTML": "12. I'm thinking of {{blank:b1}} tennis this summer.",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "taking up"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Tôi đang nghĩ đến việc bắt đầu chơi quần vợt vào mùa hè này.<br><strong>Cấu trúc:</strong> Cụm 'take up': bắt đầu một sở thích, môn thể thao mới."
-    },
-    {
-        "id": 13,
-        "type": "gap_fill_text",
-        "questionHTML": "13. I finally {{blank:b1}} organising my stamp collection after months of delay.",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "got round to"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Tôi cuối cùng đã bắt tay vào sắp xếp bộ sưu tập tem của mình sau nhiều tháng trì hoãn.<br><strong>Cấu trúc:</strong> Cấu trúc 'get round to V-ing/N': bắt đầu làm gì sau một thời gian dài dự định."
-    },
-    {
-        "id": 14,
-        "type": "gap_fill_text",
-        "questionHTML": "14. What did you {{blank:b1}} at the holiday?",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "get up to"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Bạn đã làm gì vào kỳ nghỉ?<br><strong>Cấu trúc:</strong> Cụm 'get up to': làm gì đó."
-    },
-    {
-        "id": 15,
-        "type": "gap_fill_text",
-        "questionHTML": "15. Do you {{blank:b1}} adventure sports?",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "go in for"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Bạn có đam mê thể thao mạo hiểm không?<br><strong>Cấu trúc:</strong> Cụm 'go in for': tham gia, đam mê, thích một hoạt động nào đó."
-    },
-    {
-        "id": 16,
-        "type": "gap_fill_text",
-        "questionHTML": "16. I've {{blank:b1}} skiing since I discovered snowboarding.",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "gone off"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Tôi đã không còn thích trượt tuyết kể từ khi tôi khám phá ra trượt ván tuyết.<br><strong>Cấu trúc:</strong> Cụm 'go off': không còn thích cái gì đó nữa."
-    },
-    {
-        "id": 17,
-        "type": "gap_fill_text",
-        "questionHTML": "17. Everyone was dancing, so I decided to {{blank:b1}}.",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "join in"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Mọi người đang nhảy múa, nên tôi quyết định tham gia.<br><strong>Cấu trúc:</strong> Cụm 'join in': tham gia vào một hoạt động đang diễn ra."
-    },
-    {
-        "id": 18,
-        "type": "gap_fill_text",
-        "questionHTML": "18. Our team was {{blank:b1}} in the semi-final.",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "knocked out"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Đội của chúng tôi đã bị loại ở bán kết.<br><strong>Cấu trúc:</strong> Cụm 'knock out': đánh bại, loại khỏi cuộc thi."
-    },
-    {
-        "id": 19,
-        "type": "gap_fill_text",
-        "questionHTML": "19. {{blank:b1}}! There's a cyclist coming.",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "Look out",
-                    "Watch out"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Cẩn thận! Có một người đi xe đạp đang tới.<br><strong>Cấu trúc:</strong> Cụm 'Look out/Watch out': cẩn thận, chú ý (dùng để cảnh báo nguy hiểm)."
-    },
-    {
-        "id": 20,
-        "type": "gap_fill_text",
-        "questionHTML": "20. She had to {{blank:b1}} of the race because of an ankle injury.",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "pull out"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Cô ấy đã phải rút lui khỏi cuộc đua vì chấn thương mắt cá chân.<br><strong>Cấu trúc:</strong> Cụm 'pull out': rút lui, không tham gia nữa."
-    },
-    {
-        "id": 21,
-        "type": "gap_fill_text",
-        "questionHTML": "21. They had to {{blank:b1}} the match until Saturday.",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "put off"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Họ đã phải hoãn trận đấu cho đến thứ Bảy.<br><strong>Cấu trúc:</strong> Cụm 'put off': hoãn lại."
-    },
-    {
-        "id": 22,
-        "type": "gap_fill_text",
-        "questionHTML": "22. I can't {{blank:b1}} people who cheat.",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "put up with"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Tôi không thể chịu đựng những người gian lận.<br><strong>Cấu trúc:</strong> Cụm 'put up with': chịu đựng ai/cái gì."
-    },
-    {
-        "id": 23,
-        "type": "gap_fill_text",
-        "questionHTML": "23. He quickly {{blank:b1}} swimming and now goes every day.",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "took to"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Anh ấy nhanh chóng thích bơi lội và bây giờ đi bơi mỗi ngày.<br><strong>Cấu trúc:</strong> Cụm 'take to': bắt đầu thích cái gì."
-    },
-    {
-        "id": 24,
-        "type": "gap_fill_text",
-        "questionHTML": "24. I'm thinking of {{blank:b1}} tennis this summer.",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "taking up"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Tôi đang nghĩ đến việc bắt đầu chơi quần vợt vào mùa hè này.<br><strong>Cấu trúc:</strong> Cụm 'take up': bắt đầu một sở thích, môn thể thao mới."
-    },
-    {
-        "id": 25,
-        "type": "gap_fill_text",
-        "questionHTML": "25. I finally {{blank:b1}} organising my stamp collection after months of delay.",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "got round to"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Tôi cuối cùng đã bắt tay vào sắp xếp bộ sưu tập tem của mình sau nhiều tháng trì hoãn.<br><strong>Cấu trúc:</strong> Cấu trúc 'get round to V-ing/N': bắt đầu làm gì sau một thời gian dài dự định."
-    },
-    {
-        "id": 26,
-        "type": "gap_fill_text",
-        "questionHTML": "26. What did you {{blank:b1}} at the weekend?",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "get up to"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Bạn đã làm gì vào cuối tuần?<br><strong>Cấu trúc:</strong> Cụm 'get up to': làm gì đó."
-    },
-    {
-        "id": 27,
-        "type": "gap_fill_text",
-        "questionHTML": "27. Do you {{blank:b1}} adventure sports?",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "go in for"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Bạn có đam mê thể thao mạo hiểm không?<br><strong>Cấu trúc:</strong> Cụm 'go in for': tham gia, đam mê, thích một hoạt động nào đó."
-    },
-    {
-        "id": 28,
-        "type": "gap_fill_text",
-        "questionHTML": "28. I've {{blank:b1}} skiing since I discovered snowboarding.",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "gone off"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Tôi đã không còn thích trượt tuyết kể từ khi tôi khám phá ra trượt ván tuyết.<br><strong>Cấu trúc:</strong> Cụm 'go off': không còn thích cái gì đó nữa."
-    },
-    {
-        "id": 29,
-        "type": "gap_fill_text",
-        "questionHTML": "29. Everyone was dancing, so I decided to {{blank:b1}}.",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "join in"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Mọi người đang nhảy múa, nên tôi quyết định tham gia.<br><strong>Cấu trúc:</strong> Cụm 'join in': tham gia vào một hoạt động đang diễn ra."
-    },
-    {
-        "id": 30,
-        "type": "gap_fill_text",
-        "questionHTML": "30. Our team was {{blank:b1}} in the semi-final.",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "knocked out"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Đội của chúng tôi đã bị loại ở bán kết.<br><strong>Cấu trúc:</strong> Cụm 'knock out': đánh bại, loại khỏi cuộc thi."
-    },
-    {
-        "id": 31,
-        "type": "gap_fill_text",
-        "questionHTML": "31. {{blank:b1}}! There's a cyclist coming.",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "Look out",
-                    "Watch out"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Cẩn thận! Có một người đi xe đạp đang tới.<br><strong>Cấu trúc:</strong> Cụm 'Look out/Watch out': cẩn thận, chú ý (dùng để cảnh báo nguy hiểm)."
-    },
-    {
-        "id": 32,
-        "type": "gap_fill_text",
-        "questionHTML": "32. She had to {{blank:b1}} of the race because of an ankle injury.",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "pull out"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Cô ấy đã phải rút lui khỏi cuộc đua vì chấn thương mắt cá chân.<br><strong>Cấu trúc:</strong> Cụm 'pull out': rút lui, không tham gia nữa."
-    },
-    {
-        "id": 33,
-        "type": "gap_fill_text",
-        "questionHTML": "33. They had to {{blank:b1}} the match until next week.",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "put off"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Họ đã phải hoãn trận đấu cho đến tuần sau.<br><strong>Cấu trúc:</strong> Cụm 'put off': hoãn lại."
-    },
-    {
-        "id": 34,
-        "type": "gap_fill_text",
-        "questionHTML": "34. I can't {{blank:b1}} people who cheat.",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "put up with"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Tôi không thể chịu đựng những người gian lận.<br><strong>Cấu trúc:</strong> Cụm 'put up with': chịu đựng ai/cái gì."
-    },
-    {
-        "id": 35,
-        "type": "gap_fill_text",
-        "questionHTML": "35. He quickly {{blank:b1}} swimming and now goes every day.",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "took to"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Anh ấy nhanh chóng thích bơi lội và bây giờ đi bơi mỗi ngày.<br><strong>Cấu trúc:</strong> Cụm 'take to': bắt đầu thích cái gì."
-    },
-    {
-        "id": 36,
-        "type": "gap_fill_text",
-        "questionHTML": "36. I'm thinking of {{blank:b1}} tennis this summer.",
-        "blanks": [
-            {
-                "blankId": "b1",
-                "correctAnswers": [
-                    "taking up"
-                ]
-            }
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Tôi đang nghĩ đến việc bắt đầu chơi quần vợt vào mùa hè này.<br><strong>Cấu trúc:</strong> Cụm 'take up': bắt đầu một sở thích, môn thể thao mới."
-    },
-    {
-        "id": 37,
-        "type": "sentence_rewrite",
-        "originalSentenceHTML": "<b>Questions 37–50. Sentence Transformation</b><br>37. I cannot tolerate waking up at 5 a.m. for practice. (PUT)",
-        "questionHTML": "→ I cannot ________ waking up at 5 a.m. for practice.",
+  {
+    "id": 1,
+    "type": "gap_fill_text",
+    "questionHTML": "<b>Questions 1–36. Gap Fill – Phrasal Verbs</b><br>1. I finally {{blank:b1}} organising my stamp collection after months of delay.",
+    "blanks": [
+      {
+        "blankId": "b1",
         "correctAnswers": [
-            "put up with"
-        ],
-        "sampleAnswers": [
-            "put up with"
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Tôi không thể chịu đựng việc thức dậy lúc 5 giờ sáng để tập luyện.<br><strong>Cấu trúc:</strong> Cụm 'put up with' = 'tolerate': chịu đựng."
-    },
-    {
-        "id": 38,
-        "type": "sentence_rewrite",
-        "originalSentenceHTML": "38. We have finally started planning the tournament. (ROUND)",
-        "questionHTML": "→ We have finally ________ planning the tournament.",
+          "got round to"
+        ]
+      }
+    ],
+    "explanationHTML": "<strong>Dịch:</strong> Tôi cuối cùng đã bắt tay vào sắp xếp bộ sưu tập tem của mình sau nhiều tháng trì hoãn.<br><strong>Cấu trúc:</strong> Cấu trúc 'get round to V-ing/N': bắt đầu làm gì sau một thời gian dài dự định."
+  },
+  {
+    "id": 2,
+    "type": "gap_fill_text",
+    "questionHTML": "2. What did you {{blank:b1}} at the weekend?",
+    "blanks": [
+      {
+        "blankId": "b1",
         "correctAnswers": [
-            "got round to",
-            "gotten round to"
-        ],
-        "sampleAnswers": [
-            "got round to",
-            "gotten round to"
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Cuối cùng chúng tôi cũng bắt tay vào lên kế hoạch cho giải đấu.<br><strong>Cấu trúc:</strong> Cụm 'get round to' = 'start (after a delay)': bắt đầu làm gì sau một thời gian dài."
-    },
-    {
-        "id": 39,
-        "type": "sentence_rewrite",
-        "originalSentenceHTML": "39. She no longer likes team sports. (OFF)",
-        "questionHTML": "→ She has ________ team sports.",
+          "get up to"
+        ]
+      }
+    ],
+    "explanationHTML": "<strong>Dịch:</strong> Bạn đã làm gì vào cuối tuần?<br><strong>Cấu trúc:</strong> Cụm 'get up to': làm gì đó (thường là chuyện gì đó không bình thường hoặc tinh nghịch)."
+  },
+  {
+    "id": 3,
+    "type": "gap_fill_text",
+    "questionHTML": "3. Do you {{blank:b1}} adventure sports?",
+    "blanks": [
+      {
+        "blankId": "b1",
         "correctAnswers": [
-            "gone off"
-        ],
-        "sampleAnswers": [
-            "gone off"
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Cô ấy không còn thích các môn thể thao đồng đội nữa.<br><strong>Cấu trúc:</strong> Cụm 'go off' = 'no longer like': không còn thích nữa."
-    },
-    {
-        "id": 40,
-        "type": "sentence_rewrite",
-        "originalSentenceHTML": "40. Why don't you start yoga? (UP)",
-        "questionHTML": "→ Why don't you ________ yoga?",
+          "go in for"
+        ]
+      }
+    ],
+    "explanationHTML": "<strong>Dịch:</strong> Bạn có đam mê thể thao mạo hiểm không?<br><strong>Cấu trúc:</strong> Cụm 'go in for': tham gia, đam mê, thích một hoạt động nào đó."
+  },
+  {
+    "id": 4,
+    "type": "gap_fill_text",
+    "questionHTML": "4. I've {{blank:b1}} skiing since I discovered snowboarding.",
+    "blanks": [
+      {
+        "blankId": "b1",
         "correctAnswers": [
-            "take up"
-        ],
-        "sampleAnswers": [
-            "take up"
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Tại sao bạn không bắt đầu tập yoga?<br><strong>Cấu trúc:</strong> Cụm 'take up' = 'start': bắt đầu một sở thích/môn thể thao."
-    },
-    {
-        "id": 41,
-        "type": "sentence_rewrite",
-        "originalSentenceHTML": "41. The organisers delayed the final. (PUT)",
-        "questionHTML": "→ The organisers ________ the final.",
+          "gone off"
+        ]
+      }
+    ],
+    "explanationHTML": "<strong>Dịch:</strong> Tôi đã không còn thích trượt tuyết kể từ khi tôi khám phá ra trượt ván tuyết.<br><strong>Cấu trúc:</strong> Cụm 'go off': không còn thích cái gì đó nữa."
+  },
+  {
+    "id": 5,
+    "type": "gap_fill_text",
+    "questionHTML": "5. Everyone was dancing, so I decided to {{blank:b1}}.",
+    "blanks": [
+      {
+        "blankId": "b1",
         "correctAnswers": [
-            "put off"
-        ],
-        "sampleAnswers": [
-            "put off"
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Ban tổ chức đã hoãn trận chung kết.<br><strong>Cấu trúc:</strong> Cụm 'put off' = 'delay': hoãn lại."
-    },
-    {
-        "id": 42,
-        "type": "sentence_rewrite",
-        "originalSentenceHTML": "42. He withdrew from the competition. (PULLED)",
-        "questionHTML": "→ He ________ the competition.",
+          "join in"
+        ]
+      }
+    ],
+    "explanationHTML": "<strong>Dịch:</strong> Mọi người đang nhảy múa, nên tôi quyết định tham gia.<br><strong>Cấu trúc:</strong> Cụm 'join in': tham gia vào một hoạt động đang diễn ra."
+  },
+  {
+    "id": 6,
+    "type": "gap_fill_text",
+    "questionHTML": "6. Our team was {{blank:b1}} in the semi-final.",
+    "blanks": [
+      {
+        "blankId": "b1",
         "correctAnswers": [
-            "pulled out of"
-        ],
-        "sampleAnswers": [
-            "pulled out of"
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Anh ấy đã rút lui khỏi cuộc thi.<br><strong>Cấu trúc:</strong> Cụm 'pull out of' = 'withdraw from': rút lui khỏi."
-    },
-    {
-        "id": 43,
-        "type": "sentence_rewrite",
-        "originalSentenceHTML": "43. The champion eliminated me in round two. (KNOCKED)",
-        "questionHTML": "→ I ________ in round two.",
+          "knocked out"
+        ]
+      }
+    ],
+    "explanationHTML": "<strong>Dịch:</strong> Đội của chúng tôi đã bị loại ở bán kết.<br><strong>Cấu trúc:</strong> Cụm 'knock out': đánh bại, loại khỏi cuộc thi."
+  },
+  {
+    "id": 7,
+    "type": "gap_fill_text",
+    "questionHTML": "7. {{blank:b1}}! There's a cyclist coming.",
+    "blanks": [
+      {
+        "blankId": "b1",
         "correctAnswers": [
-            "was knocked out"
-        ],
-        "sampleAnswers": [
-            "was knocked out"
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Tôi đã bị loại ở vòng hai.<br><strong>Cấu trúc:</strong> Cụm 'knock out' = 'eliminate': loại khỏi cuộc thi. Câu bị động 'was knocked out'."
-    },
-    {
-        "id": 44,
-        "type": "sentence_rewrite",
-        "originalSentenceHTML": "44. She started to like jogging almost immediately. (TOOK)",
-        "questionHTML": "→ She ________ jogging almost immediately.",
+          "Look out",
+          "Watch out"
+        ]
+      }
+    ],
+    "explanationHTML": "<strong>Dịch:</strong> Cẩn thận! Có một người đi xe đạp đang tới.<br><strong>Cấu trúc:</strong> Cụm 'Look out/Watch out': cẩn thận, chú ý (dùng để cảnh báo nguy hiểm)."
+  },
+  {
+    "id": 8,
+    "type": "gap_fill_text",
+    "questionHTML": "8. She had to {{blank:b1}} of the race because of an ankle injury.",
+    "blanks": [
+      {
+        "blankId": "b1",
         "correctAnswers": [
-            "took to"
-        ],
-        "sampleAnswers": [
-            "took to"
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Cô ấy bắt đầu thích chạy bộ gần như ngay lập tức.<br><strong>Cấu trúc:</strong> Cụm 'take to' = 'start to like': bắt đầu thích."
-    },
-    {
-        "id": 45,
-        "type": "sentence_rewrite",
-        "originalSentenceHTML": "45. The children participated in the game. (JOINED)",
-        "questionHTML": "→ The children ________ the game.",
+          "pull out"
+        ]
+      }
+    ],
+    "explanationHTML": "<strong>Dịch:</strong> Cô ấy đã phải rút lui khỏi cuộc đua vì chấn thương mắt cá chân.<br><strong>Cấu trúc:</strong> Cụm 'pull out': rút lui, không tham gia nữa."
+  },
+  {
+    "id": 9,
+    "type": "gap_fill_text",
+    "questionHTML": "9. They had to {{blank:b1}} the match until Saturday.",
+    "blanks": [
+      {
+        "blankId": "b1",
         "correctAnswers": [
-            "joined in"
-        ],
-        "sampleAnswers": [
-            "joined in"
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Bọn trẻ đã tham gia vào trò chơi.<br><strong>Cấu trúc:</strong> Cụm 'join in' = 'participate in': tham gia vào."
-    },
-    {
-        "id": 46,
-        "type": "sentence_rewrite",
-        "originalSentenceHTML": "46. Be careful! The ball is coming this way. (LOOK)",
-        "questionHTML": "→ ________! The ball is coming this way.",
+          "put off"
+        ]
+      }
+    ],
+    "explanationHTML": "<strong>Dịch:</strong> Họ đã phải hoãn trận đấu cho đến thứ Bảy.<br><strong>Cấu trúc:</strong> Cụm 'put off': hoãn lại."
+  },
+  {
+    "id": 10,
+    "type": "gap_fill_text",
+    "questionHTML": "10. I can't {{blank:b1}} people who cheat.",
+    "blanks": [
+      {
+        "blankId": "b1",
         "correctAnswers": [
-            "Look out"
-        ],
-        "sampleAnswers": [
-            "Look out"
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Cẩn thận! Quả bóng đang lao tới.<br><strong>Cấu trúc:</strong> Cụm 'Look out' = 'Be careful': cẩn thận, coi chừng."
-    },
-    {
-        "id": 47,
-        "type": "sentence_rewrite",
-        "originalSentenceHTML": "47. What mischievous things were you doing? (UP)",
-        "questionHTML": "→ What ________?",
+          "put up with"
+        ]
+      }
+    ],
+    "explanationHTML": "<strong>Dịch:</strong> Tôi không thể chịu đựng những người gian lận.<br><strong>Cấu trúc:</strong> Cụm 'put up with': chịu đựng ai/cái gì."
+  },
+  {
+    "id": 11,
+    "type": "gap_fill_text",
+    "questionHTML": "11. He quickly {{blank:b1}} swimming and now goes every day.",
+    "blanks": [
+      {
+        "blankId": "b1",
         "correctAnswers": [
-            "were you getting up to"
-        ],
-        "sampleAnswers": [
-            "were you getting up to"
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Bạn đã giở trò gì vậy?<br><strong>Cấu trúc:</strong> Cụm 'get up to' = 'do mischievous things': làm chuyện tinh nghịch/ám muội."
-    },
-    {
-        "id": 48,
-        "type": "sentence_rewrite",
-        "originalSentenceHTML": "48. She likes entering photography competitions. (IN)",
-        "questionHTML": "→ She ________ photography competitions.",
+          "took to"
+        ]
+      }
+    ],
+    "explanationHTML": "<strong>Dịch:</strong> Anh ấy nhanh chóng thích bơi lội và bây giờ đi bơi mỗi ngày.<br><strong>Cấu trúc:</strong> Cụm 'take to': bắt đầu thích cái gì."
+  },
+  {
+    "id": 12,
+    "type": "gap_fill_text",
+    "questionHTML": "12. I'm thinking of {{blank:b1}} tennis this summer.",
+    "blanks": [
+      {
+        "blankId": "b1",
         "correctAnswers": [
-            "goes in for"
-        ],
-        "sampleAnswers": [
-            "goes in for"
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Cô ấy thích tham gia các cuộc thi nhiếp ảnh.<br><strong>Cấu trúc:</strong> Cụm 'go in for' = 'like entering/participating in': tham gia, đam mê."
-    },
-    {
-        "id": 49,
-        "type": "sentence_rewrite",
-        "originalSentenceHTML": "49. This hobby occupies most of my free time. (TAKES)",
-        "questionHTML": "→ This hobby ________ most of my free time.",
+          "taking up"
+        ]
+      }
+    ],
+    "explanationHTML": "<strong>Dịch:</strong> Tôi đang nghĩ đến việc bắt đầu chơi quần vợt vào mùa hè này.<br><strong>Cấu trúc:</strong> Cụm 'take up': bắt đầu một sở thích, môn thể thao mới."
+  },
+  {
+    "id": 13,
+    "type": "gap_fill_text",
+    "questionHTML": "13. I've been meaning to read that book, but I just haven't {{got round to}} it yet.",
+    "blanks": [
+      {
+        "blankId": "b1",
         "correctAnswers": [
-            "takes up"
-        ],
-        "sampleAnswers": [
-            "takes up"
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Sở thích này chiếm phần lớn thời gian rảnh của tôi.<br><strong>Cấu trúc:</strong> Cụm 'take up' = 'occupy': chiếm (thời gian, không gian)."
-    },
-    {
-        "id": 50,
-        "type": "sentence_rewrite",
-        "originalSentenceHTML": "50. I will eventually repair my old bicycle. (ROUND)",
-        "questionHTML": "→ I will ________ repairing my old bicycle.",
+          "got round to"
+        ]
+      }
+    ],
+    "explanationHTML": "Phrasal verb: got round to"
+  },
+  {
+    "id": 14,
+    "type": "gap_fill_text",
+    "questionHTML": "14. I wonder what the kids will {{get up to}} while we're not watching.",
+    "blanks": [
+      {
+        "blankId": "b1",
         "correctAnswers": [
-            "get round to"
-        ],
-        "sampleAnswers": [
-            "get round to"
-        ],
-        "explanationHTML": "<strong>Dịch:</strong> Tôi sẽ sắp xếp thời gian để sửa chiếc xe đạp cũ của mình.<br><strong>Cấu trúc:</strong> Cụm 'get round to' = 'eventually do': sắp xếp thời gian để làm gì."
-    }
+          "get up to"
+        ]
+      }
+    ],
+    "explanationHTML": "Phrasal verb: get up to"
+  },
+  {
+    "id": 15,
+    "type": "gap_fill_text",
+    "questionHTML": "15. She decided to {{go in for}} the local baking competition this year.",
+    "blanks": [
+      {
+        "blankId": "b1",
+        "correctAnswers": [
+          "go in for"
+        ]
+      }
+    ],
+    "explanationHTML": "Phrasal verb: go in for"
+  },
+  {
+    "id": 16,
+    "type": "gap_fill_text",
+    "questionHTML": "16. I used to love chocolate, but I've completely {{gone off}} it lately.",
+    "blanks": [
+      {
+        "blankId": "b1",
+        "correctAnswers": [
+          "gone off"
+        ]
+      }
+    ],
+    "explanationHTML": "Phrasal verb: gone off"
+  },
+  {
+    "id": 17,
+    "type": "gap_fill_text",
+    "questionHTML": "17. When the musicians started playing, everyone started to clap and {{join in}}.",
+    "blanks": [
+      {
+        "blankId": "b1",
+        "correctAnswers": [
+          "join in"
+        ]
+      }
+    ],
+    "explanationHTML": "Phrasal verb: join in"
+  },
+  {
+    "id": 18,
+    "type": "gap_fill_text",
+    "questionHTML": "18. The heavyweight champion was {{knocked out}} in the third round.",
+    "blanks": [
+      {
+        "blankId": "b1",
+        "correctAnswers": [
+          "knocked out"
+        ]
+      }
+    ],
+    "explanationHTML": "Phrasal verb: knocked out"
+  },
+  {
+    "id": 19,
+    "type": "gap_fill_text",
+    "questionHTML": "19. {{Look out}}! The floor is wet and slippery.",
+    "blanks": [
+      {
+        "blankId": "b1",
+        "correctAnswers": [
+          "Look out"
+        ]
+      }
+    ],
+    "explanationHTML": "Phrasal verb: Look out"
+  },
+  {
+    "id": 20,
+    "type": "gap_fill_text",
+    "questionHTML": "20. Due to lack of funding, the sponsor had to {{pull out}} of the project.",
+    "blanks": [
+      {
+        "blankId": "b1",
+        "correctAnswers": [
+          "pull out"
+        ]
+      }
+    ],
+    "explanationHTML": "Phrasal verb: pull out"
+  },
+  {
+    "id": 21,
+    "type": "gap_fill_text",
+    "questionHTML": "21. We shouldn't {{put off}} the meeting any longer; we need to decide now.",
+    "blanks": [
+      {
+        "blankId": "b1",
+        "correctAnswers": [
+          "put off"
+        ]
+      }
+    ],
+    "explanationHTML": "Phrasal verb: put off"
+  },
+  {
+    "id": 22,
+    "type": "gap_fill_text",
+    "questionHTML": "22. I don't know how she can {{put up with}} that loud music all day.",
+    "blanks": [
+      {
+        "blankId": "b1",
+        "correctAnswers": [
+          "put up with"
+        ]
+      }
+    ],
+    "explanationHTML": "Phrasal verb: put up with"
+  },
+  {
+    "id": 23,
+    "type": "gap_fill_text",
+    "questionHTML": "23. My grandfather has really {{taken to}} gardening since he retired.",
+    "blanks": [
+      {
+        "blankId": "b1",
+        "correctAnswers": [
+          "taken to"
+        ]
+      }
+    ],
+    "explanationHTML": "Phrasal verb: taken to"
+  },
+  {
+    "id": 24,
+    "type": "gap_fill_text",
+    "questionHTML": "24. If you want to get fit, you should consider {{taking up}} jogging.",
+    "blanks": [
+      {
+        "blankId": "b1",
+        "correctAnswers": [
+          "taking up"
+        ]
+      }
+    ],
+    "explanationHTML": "Phrasal verb: taking up"
+  },
+  {
+    "id": 25,
+    "type": "gap_fill_text",
+    "questionHTML": "25. After months of procrastinating, he finally {{got round to}} painting the fence.",
+    "blanks": [
+      {
+        "blankId": "b1",
+        "correctAnswers": [
+          "got round to"
+        ]
+      }
+    ],
+    "explanationHTML": "Phrasal verb: got round to"
+  },
+  {
+    "id": 26,
+    "type": "gap_fill_text",
+    "questionHTML": "26. They always {{get up to}} no good when they are left alone at home.",
+    "blanks": [
+      {
+        "blankId": "b1",
+        "correctAnswers": [
+          "get up to"
+        ]
+      }
+    ],
+    "explanationHTML": "Phrasal verb: get up to"
+  },
+  {
+    "id": 27,
+    "type": "gap_fill_text",
+    "questionHTML": "27. Not many people {{go in for}} such extreme endurance sports.",
+    "blanks": [
+      {
+        "blankId": "b1",
+        "correctAnswers": [
+          "go in for"
+        ]
+      }
+    ],
+    "explanationHTML": "Phrasal verb: go in for"
+  },
+  {
+    "id": 28,
+    "type": "gap_fill_text",
+    "questionHTML": "28. Since the accident, he has {{gone off}} driving fast cars.",
+    "blanks": [
+      {
+        "blankId": "b1",
+        "correctAnswers": [
+          "gone off"
+        ]
+      }
+    ],
+    "explanationHTML": "Phrasal verb: gone off"
+  },
+  {
+    "id": 29,
+    "type": "gap_fill_text",
+    "questionHTML": "29. Don't just stand there watching us play; come and {{join in}}!",
+    "blanks": [
+      {
+        "blankId": "b1",
+        "correctAnswers": [
+          "join in"
+        ]
+      }
+    ],
+    "explanationHTML": "Phrasal verb: join in"
+  },
+  {
+    "id": 30,
+    "type": "gap_fill_text",
+    "questionHTML": "30. It was a shock when the favorite team got {{knocked out}} so early in the tournament.",
+    "blanks": [
+      {
+        "blankId": "b1",
+        "correctAnswers": [
+          "knocked out"
+        ]
+      }
+    ],
+    "explanationHTML": "Phrasal verb: knocked out"
+  },
+  {
+    "id": 31,
+    "type": "gap_fill_text",
+    "questionHTML": "31. {{Look out}} for cars when you cross the busy street.",
+    "blanks": [
+      {
+        "blankId": "b1",
+        "correctAnswers": [
+          "Look out"
+        ]
+      }
+    ],
+    "explanationHTML": "Phrasal verb: Look out"
+  },
+  {
+    "id": 32,
+    "type": "gap_fill_text",
+    "questionHTML": "32. The lead singer felt ill, so the band had to {{pull out}} of the concert.",
+    "blanks": [
+      {
+        "blankId": "b1",
+        "correctAnswers": [
+          "pull out"
+        ]
+      }
+    ],
+    "explanationHTML": "Phrasal verb: pull out"
+  },
+  {
+    "id": 33,
+    "type": "gap_fill_text",
+    "questionHTML": "33. Never {{put off}} until tomorrow what you can do today.",
+    "blanks": [
+      {
+        "blankId": "b1",
+        "correctAnswers": [
+          "put off"
+        ]
+      }
+    ],
+    "explanationHTML": "Phrasal verb: put off"
+  },
+  {
+    "id": 34,
+    "type": "gap_fill_text",
+    "questionHTML": "34. The teacher refuses to {{put up with}} any bad behavior in her classroom.",
+    "blanks": [
+      {
+        "blankId": "b1",
+        "correctAnswers": [
+          "put up with"
+        ]
+      }
+    ],
+    "explanationHTML": "Phrasal verb: put up with"
+  },
+  {
+    "id": 35,
+    "type": "gap_fill_text",
+    "questionHTML": "35. The new puppy quickly {{took to}} sleeping at the foot of my bed.",
+    "blanks": [
+      {
+        "blankId": "b1",
+        "correctAnswers": [
+          "took to"
+        ]
+      }
+    ],
+    "explanationHTML": "Phrasal verb: took to"
+  },
+  {
+    "id": 36,
+    "type": "gap_fill_text",
+    "questionHTML": "36. I decided to {{take up}} photography to capture the beautiful landscapes.",
+    "blanks": [
+      {
+        "blankId": "b1",
+        "correctAnswers": [
+          "take up"
+        ]
+      }
+    ],
+    "explanationHTML": "Phrasal verb: take up"
+  },
+  {
+    "id": 37,
+    "type": "sentence_rewrite",
+    "originalSentenceHTML": "<b>Questions 37–50. Sentence Transformation</b><br>37. I cannot tolerate waking up at 5 a.m. for practice. (PUT)",
+    "questionHTML": "→ I cannot ________ waking up at 5 a.m. for practice.",
+    "correctAnswers": [
+      "put up with"
+    ],
+    "sampleAnswers": [
+      "put up with"
+    ],
+    "explanationHTML": "<strong>Dịch:</strong> Tôi không thể chịu đựng việc thức dậy lúc 5 giờ sáng để tập luyện.<br><strong>Cấu trúc:</strong> Cụm 'put up with' = 'tolerate': chịu đựng."
+  },
+  {
+    "id": 38,
+    "type": "sentence_rewrite",
+    "originalSentenceHTML": "38. We have finally started planning the tournament. (ROUND)",
+    "questionHTML": "→ We have finally ________ planning the tournament.",
+    "correctAnswers": [
+      "got round to",
+      "gotten round to"
+    ],
+    "sampleAnswers": [
+      "got round to",
+      "gotten round to"
+    ],
+    "explanationHTML": "<strong>Dịch:</strong> Cuối cùng chúng tôi cũng bắt tay vào lên kế hoạch cho giải đấu.<br><strong>Cấu trúc:</strong> Cụm 'get round to' = 'start (after a delay)': bắt đầu làm gì sau một thời gian dài."
+  },
+  {
+    "id": 39,
+    "type": "sentence_rewrite",
+    "originalSentenceHTML": "39. She no longer likes team sports. (OFF)",
+    "questionHTML": "→ She has ________ team sports.",
+    "correctAnswers": [
+      "gone off"
+    ],
+    "sampleAnswers": [
+      "gone off"
+    ],
+    "explanationHTML": "<strong>Dịch:</strong> Cô ấy không còn thích các môn thể thao đồng đội nữa.<br><strong>Cấu trúc:</strong> Cụm 'go off' = 'no longer like': không còn thích nữa."
+  },
+  {
+    "id": 40,
+    "type": "sentence_rewrite",
+    "originalSentenceHTML": "40. Why don't you start yoga? (UP)",
+    "questionHTML": "→ Why don't you ________ yoga?",
+    "correctAnswers": [
+      "take up"
+    ],
+    "sampleAnswers": [
+      "take up"
+    ],
+    "explanationHTML": "<strong>Dịch:</strong> Tại sao bạn không bắt đầu tập yoga?<br><strong>Cấu trúc:</strong> Cụm 'take up' = 'start': bắt đầu một sở thích/môn thể thao."
+  },
+  {
+    "id": 41,
+    "type": "sentence_rewrite",
+    "originalSentenceHTML": "41. The organisers delayed the final. (PUT)",
+    "questionHTML": "→ The organisers ________ the final.",
+    "correctAnswers": [
+      "put off"
+    ],
+    "sampleAnswers": [
+      "put off"
+    ],
+    "explanationHTML": "<strong>Dịch:</strong> Ban tổ chức đã hoãn trận chung kết.<br><strong>Cấu trúc:</strong> Cụm 'put off' = 'delay': hoãn lại."
+  },
+  {
+    "id": 42,
+    "type": "sentence_rewrite",
+    "originalSentenceHTML": "42. He withdrew from the competition. (PULLED)",
+    "questionHTML": "→ He ________ the competition.",
+    "correctAnswers": [
+      "pulled out of"
+    ],
+    "sampleAnswers": [
+      "pulled out of"
+    ],
+    "explanationHTML": "<strong>Dịch:</strong> Anh ấy đã rút lui khỏi cuộc thi.<br><strong>Cấu trúc:</strong> Cụm 'pull out of' = 'withdraw from': rút lui khỏi."
+  },
+  {
+    "id": 43,
+    "type": "sentence_rewrite",
+    "originalSentenceHTML": "43. The champion eliminated me in round two. (KNOCKED)",
+    "questionHTML": "→ I ________ in round two.",
+    "correctAnswers": [
+      "was knocked out"
+    ],
+    "sampleAnswers": [
+      "was knocked out"
+    ],
+    "explanationHTML": "<strong>Dịch:</strong> Tôi đã bị loại ở vòng hai.<br><strong>Cấu trúc:</strong> Cụm 'knock out' = 'eliminate': loại khỏi cuộc thi. Câu bị động 'was knocked out'."
+  },
+  {
+    "id": 44,
+    "type": "sentence_rewrite",
+    "originalSentenceHTML": "44. She started to like jogging almost immediately. (TOOK)",
+    "questionHTML": "→ She ________ jogging almost immediately.",
+    "correctAnswers": [
+      "took to"
+    ],
+    "sampleAnswers": [
+      "took to"
+    ],
+    "explanationHTML": "<strong>Dịch:</strong> Cô ấy bắt đầu thích chạy bộ gần như ngay lập tức.<br><strong>Cấu trúc:</strong> Cụm 'take to' = 'start to like': bắt đầu thích."
+  },
+  {
+    "id": 45,
+    "type": "sentence_rewrite",
+    "originalSentenceHTML": "45. The children participated in the game. (JOINED)",
+    "questionHTML": "→ The children ________ the game.",
+    "correctAnswers": [
+      "joined in"
+    ],
+    "sampleAnswers": [
+      "joined in"
+    ],
+    "explanationHTML": "<strong>Dịch:</strong> Bọn trẻ đã tham gia vào trò chơi.<br><strong>Cấu trúc:</strong> Cụm 'join in' = 'participate in': tham gia vào."
+  },
+  {
+    "id": 46,
+    "type": "sentence_rewrite",
+    "originalSentenceHTML": "46. Be careful! The ball is coming this way. (LOOK)",
+    "questionHTML": "→ ________! The ball is coming this way.",
+    "correctAnswers": [
+      "Look out"
+    ],
+    "sampleAnswers": [
+      "Look out"
+    ],
+    "explanationHTML": "<strong>Dịch:</strong> Cẩn thận! Quả bóng đang lao tới.<br><strong>Cấu trúc:</strong> Cụm 'Look out' = 'Be careful': cẩn thận, coi chừng."
+  },
+  {
+    "id": 47,
+    "type": "sentence_rewrite",
+    "originalSentenceHTML": "47. What mischievous things were you doing? (UP)",
+    "questionHTML": "→ What ________?",
+    "correctAnswers": [
+      "were you getting up to"
+    ],
+    "sampleAnswers": [
+      "were you getting up to"
+    ],
+    "explanationHTML": "<strong>Dịch:</strong> Bạn đã giở trò gì vậy?<br><strong>Cấu trúc:</strong> Cụm 'get up to' = 'do mischievous things': làm chuyện tinh nghịch/ám muội."
+  },
+  {
+    "id": 48,
+    "type": "sentence_rewrite",
+    "originalSentenceHTML": "48. She likes entering photography competitions. (IN)",
+    "questionHTML": "→ She ________ photography competitions.",
+    "correctAnswers": [
+      "goes in for"
+    ],
+    "sampleAnswers": [
+      "goes in for"
+    ],
+    "explanationHTML": "<strong>Dịch:</strong> Cô ấy thích tham gia các cuộc thi nhiếp ảnh.<br><strong>Cấu trúc:</strong> Cụm 'go in for' = 'like entering/participating in': tham gia, đam mê."
+  },
+  {
+    "id": 49,
+    "type": "sentence_rewrite",
+    "originalSentenceHTML": "49. This hobby occupies most of my free time. (TAKES)",
+    "questionHTML": "→ This hobby ________ most of my free time.",
+    "correctAnswers": [
+      "takes up"
+    ],
+    "sampleAnswers": [
+      "takes up"
+    ],
+    "explanationHTML": "<strong>Dịch:</strong> Sở thích này chiếm phần lớn thời gian rảnh của tôi.<br><strong>Cấu trúc:</strong> Cụm 'take up' = 'occupy': chiếm (thời gian, không gian)."
+  },
+  {
+    "id": 50,
+    "type": "sentence_rewrite",
+    "originalSentenceHTML": "50. I will eventually repair my old bicycle. (ROUND)",
+    "questionHTML": "→ I will ________ repairing my old bicycle.",
+    "correctAnswers": [
+      "get round to"
+    ],
+    "sampleAnswers": [
+      "get round to"
+    ],
+    "explanationHTML": "<strong>Dịch:</strong> Tôi sẽ sắp xếp thời gian để sửa chiếc xe đạp cũ của mình.<br><strong>Cấu trúc:</strong> Cụm 'get round to' = 'eventually do': sắp xếp thời gian để làm gì."
+  }
 ];
+if (typeof module !== 'undefined') {  };
         
           let state = {};
           
