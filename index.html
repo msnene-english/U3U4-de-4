@@ -3,7 +3,7 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>U3-U4 Đề 4</title>
+    <title>U3U4 đề 4</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f0f2f5; position: relative; z-index: 1; }
         .watermark { position: absolute; top: 30px; left: 0; right: 0; text-align: center; font-size: 50px; color: rgba(0, 0, 0, 0.04); font-weight: bold; pointer-events: none; z-index: -1; user-select: none; }
@@ -57,14 +57,14 @@
     </head>
     <body>
     <div class="watermark">
-        <div>U3-U4 Đề 4<br>GV biên soạn: Ms Chí Nên - 0852639652</div>
-        <div>U3-U4 Đề 4<br>GV biên soạn: Ms Chí Nên - 0852639652</div>
-        <div>U3-U4 Đề 4<br>GV biên soạn: Ms Chí Nên - 0852639652</div>
-        <div>U3-U4 Đề 4<br>GV biên soạn: Ms Chí Nên - 0852639652</div>
+        <div>U3U4 đề 4<br>GV biên soạn: Ms Chí Nên - 0852639652</div>
+        <div>U3U4 đề 4<br>GV biên soạn: Ms Chí Nên - 0852639652</div>
+        <div>U3U4 đề 4<br>GV biên soạn: Ms Chí Nên - 0852639652</div>
+        <div>U3U4 đề 4<br>GV biên soạn: Ms Chí Nên - 0852639652</div>
     </div>
     
     <div id="startScreen" class="screen active">
-        <h1>U3-U4 Đề 4</h1>
+        <h1>U3U4 đề 4</h1>
         <p style="text-align: center; color: #7f8c8d;">Nhập họ và tên của bạn để bắt đầu làm bài</p>
         <input type="text" id="studentName" placeholder="Ví dụ: Nguyễn Văn A" autocomplete="off">
         <div style="text-align: center;">
@@ -73,7 +73,7 @@
     </div>
     
     <div id="testScreen" class="screen">
-        <h2>U3-U4 Đề 4</h2>
+        <h2>U3U4 đề 4</h2>
         <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
         <div id="questionsContainer"></div>
         <div style="text-align: center; margin-top: 30px;">
@@ -93,7 +93,7 @@
     </div>
     
     <script>
-        const testName = 'rU3-U4 Đề 4';
+        const testName = 'rU3U4 đề 4';
         const quizData = [
   {
     "id": 1,
@@ -1049,17 +1049,7 @@ if (typeof module !== 'undefined') {  };
                       let normAns = normalize(ans.toLowerCase());
                       if (normAns === normVal) return true;
                       
-                      let parts = normAns.split(' ');
-                      let exactMissingPart = '';
-                      if (parts.length >= 2 && normAns) {
-                          let prefix = normalize(parts[0].replace(/^(->|\?|\u2019)\s*/, '').toLowerCase());
-                          let suffix = normalize(parts[parts.length - 1].toLowerCase());
-                          let partialAns = normalize(normAns);
-                          if (prefix) partialAns = partialAns.replace(new RegExp('^' + prefix.replace(/[.*+?^${}()|[\]\\\\]/g, '\\\\$&') + '\\\\s*'), '').trim();
-                          if (suffix) partialAns = partialAns.replace(new RegExp('\\\\s*' + suffix.replace(/[.*+?^${}()|[\]\\\\]/g, '\\\\$&') + '$'), '').trim();
-                          exactMissingPart = partialAns;
-                          if (partialAns && partialAns === normVal) return true;
-                      }
+                      /* partial matching removed to prevent antonym bugs */
                       return false;
                   });
                   
